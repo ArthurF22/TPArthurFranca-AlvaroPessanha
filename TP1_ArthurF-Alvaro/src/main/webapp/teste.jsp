@@ -28,6 +28,8 @@
  </head>
 
  <body>
+    <%@include file="WEB-INF/jspf/menutop.jspf" %>
+    <h2> Hello World</h2>
   <h1> JSP </h1> 
  </body>
 </html>
