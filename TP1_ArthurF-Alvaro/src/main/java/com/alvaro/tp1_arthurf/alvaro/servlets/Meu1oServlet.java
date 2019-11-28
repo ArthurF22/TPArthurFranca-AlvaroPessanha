@@ -43,10 +43,13 @@ public class Meu1oServlet extends HttpServlet {
             Usuario user = new Usuario();
             user.setNome(nomeCompleto);
             user.setSenha(senha);
+            user.getDocRg();
+            user.getDocCpf();
             
             Double aleatorio = Math.random();
             BigDecimal id = new BigDecimal(aleatorio);
             user.setIdUsuario(id);
+            
             
             Session sessaoBD = HibernateUtil.getSession();
             Transaction tr = sessaoBD.beginTransaction();
