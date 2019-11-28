@@ -43,8 +43,8 @@ public class Meu1oServlet extends HttpServlet {
             Usuario user = new Usuario();
             user.setNome(nomeCompleto);
             user.setSenha(senha);
-            user.getDocRg();
-            user.getDocCpf();
+            user.getendmunicipio();
+            user.getendcep();
             
             Double aleatorio = Math.random();
             BigDecimal id = new BigDecimal(aleatorio);

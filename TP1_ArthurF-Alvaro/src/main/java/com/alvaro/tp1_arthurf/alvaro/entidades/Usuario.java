@@ -33,10 +33,10 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Usuario implements Serializable {
 
     @Size(max = 20)
-    @Column(name = "doc_rg", length = 20)
-    private String docRg;
-    @Column(name = "doc_cpf")
-    private Long docCpf;
+    @Column(name = "end_municipio", length = 20)
+    private String endmunicipio;
+    @Column(name = "end_cep")
+    private Long endcep;
 
     private static final long serialVersionUID = 1L;
     // @Max(value=?)  @Min(value=?)//if you know range of your decimal fields consider using these annotations to enforce field validation
@@ -109,20 +109,20 @@ public class Usuario implements Serializable {
         return "com.alvaro.tp1_arthurf.alvaro.Usuario[ idUsuario=" + idUsuario + " ]";
     }
 
-    public String getDocRg() {
-        return docRg;
+    public String getendmunicipio() {
+        return endmunicipio;
     }
 
-    public void setDocRg(String docRg) {
-        this.docRg = docRg;
+    public void setendmunicipio(String endmunicipio) {
+        this.endmunicipio = endmunicipio;
     }
 
-    public Long getDocCpf() {
-        return docCpf;
+    public Long getendcep() {
+        return endcep;
     }
 
-    public void setDocCpf(Long docCpf) {
-        this.docCpf = docCpf;
+    public void setendcep(Long endcep) {
+        this.endcep = endcep;
     }
     
     

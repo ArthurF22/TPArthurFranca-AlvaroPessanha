@@ -25,6 +25,6 @@ ALTER TABLE public.sq_usuario
   OWNER TO postgres;
 
 ALTER TABLE public.usuario
-	ADD COLUMN doc_rg character varying(20);
+	ADD COLUMN end_municipio character varying(50);
 ALTER TABLE public.usuario
-	ADD COLUMN doc_cpf numeric (11,0);
+	ADD COLUMN end_cep numeric (8,0);
